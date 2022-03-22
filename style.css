@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap";
+
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Gochi Hand";
+}
+
+li.list-group-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li.list-group-item.hund span.namn::before {
+  content: "🦴";
+  opacity: 0.6;
+}
+
+li.list-group-item.hund:hover {
+  background-color: #e9ecef;
+}
+
+li.list-group-item.hund:hover .soptunna {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.soptunna {
+  visibility: hidden;
+}
+
+.statistik {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.favorit {
+  background-color: lightskyblue;
+}
+
+.synlig {
+  visibility: visible;
+}
+
+.osynlig {
+  visibility: hidden;
+}
+
+footer {
+  opacity: 0.5;
+}
+#footer::before {
+  content: "🦴";
+}
+
+#antal::before {
+  content: "Totalt antal hundar: ";
+}
+
+#genomsnitt::before {
+  content: "Genomsnittsbetyg: ";
+}
